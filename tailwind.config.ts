@@ -8,6 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      display:["landscape"],
+      screens: {
+        mobile: "320px",
+        tablet: "750px",
+        laptop: "1024px",
+        desktop: "1280px",
+        lgDesktop: "1440px",
+        xlDesktop: "1620px",
+        landscape: { raw: "(orientation: landscape)" }
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
