@@ -19,7 +19,7 @@ const HeaderSection = () => {
   };
 
   return (
-    <div className="header-bg py-3 px-12">
+    <div className="header-bg py-5 px-12">
       <div className="flex justify-between items-center max-w-[83.5rem] mx-auto my-0">
         <div>
           <Image
@@ -43,7 +43,7 @@ const HeaderSection = () => {
           }`}
         >
           <div
-            className="close-icon cursor-pointer d-flex justify-items-end pr-5 pt-5 "
+            className="close-icon cursor-pointer d-flex justify-items-end pr-5 pt-3 "
             onClick={toggleMenu}
           >
             <svg
@@ -117,6 +117,7 @@ const HeaderSection = () => {
               "Relax. we care.",
               "Testimonials",
               "Contribute to Zero Emissions",
+              "About BEVScape",
             ].map((item, index) => (
               <li
                 key={index}

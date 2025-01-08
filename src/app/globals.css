@@ -8,14 +8,26 @@
   src: url("/assets/font/BMWTypeNext Pro.ttf") format("opentype");
 }
 
+@font-face{
+  font-family: "BMWLight";
+  src: url("/assets/font/BMWLightWeight.otf") format("opentype");
+}
 body{
   font-family: "BMWTypeNext Pro";
- 
 }
-.bg-gradient{
-  background: radial-gradient(circle at 0% 0%, #5B8792 0%, rgba(91, 135, 146, 0.8) 50%, rgba(91, 135, 146, 0) 100%),
+h1,h2,p{
+  font-family: "BMWLight";
+}
+/* .bg-gradient{
+  background: radial-gradient(circle at 0% 0%, #5B8792 0%, rgba(91, 135, 146, 0.8) -33%, rgba(91, 135, 146, 0) 88%),
               radial-gradient(circle at 100% 0%, #0C4E8C 0%, rgba(12, 78, 140, 0.8) 50%, rgba(12, 78, 140, 0) 100%),
-              linear-gradient(to bottom, #021E33, #011320);
+              linear-gradient(90deg, #011729 0%, #08202E 100%);
+
+} */
+.bg-gradient{
+  background: rgb(0,22,40);
+  background: linear-gradient(0deg, rgba(0,22,40,1) 0%, rgba(48,109,135,1) 100%);
+
 }
 .bg-gradient.fixed{
   transition: transform 0.3s ease-in-out;
@@ -43,7 +55,27 @@ body{
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+.swiper-button-next.custom::after , .swiper-button-prev.custom::after{
+  font-size: 10px !important;
+    border: 1px solid white;
+    padding: 5px 7px;
+    color: white;
+    font-weight: 700;
+}
+.swiper.mySwiper{
+  margin-right: 0!important;
+  margin-left:0!important;
+}
+.custom.swiper-pagination-bullets.swiper-pagination-horizontal{
+  top:-48px!important;
+}
+/* .mySwiper .swiper-wrapper .swiper-slide{
+width: 315px!important; 
 
+} */
+.swiper-pagination.custom .swiper-pagination-bullet{
+border-radius: 0!important;
+}
 .hover-text:hover:before,
 .hover-text.active:before {
   opacity: 1; 
@@ -58,4 +90,29 @@ body{
 }
 .mileage-bg p:hover{
   background: linear-gradient(90deg, #098A7F 0%, rgba(9, 138, 127, 0.6) 100%);
+  border: none!important;
+}
+
+.card-gradient{
+  background: linear-gradient(90deg, rgba(35, 147, 208, 0.24) 0%, rgba(18, 75, 106, 0.24) 52.5%, rgba(35, 147, 208, 0.24) 100%);
+}
+.border-gradient{
+  border:0.84px solid;border-image-source: linear-gradient(93.4deg, rgba(255, 255, 255, 0.3) -10.99%, rgba(255, 255, 255, 0.075) 13.28%, rgba(255, 255, 255, 0.075) 74.26%, rgba(255, 255, 255, 0.3) 117.5%);
+  border-image-slice: 1;
+}
+
+.font-eleven{
+  font-size: 0.6875rem; /* (11px) */
+}
+.font-ten{
+  font-size: 0.625rem; /* (10px) */
+}
+.font-nine{
+  font-size: 0.565rem; /* (9px) */
+}
+.font-eight{
+  font-size: 0.5rem; /* (8px) */
+}
+.font-seven{
+  font-size: 0.4375rem; /* (7px) */
 }
